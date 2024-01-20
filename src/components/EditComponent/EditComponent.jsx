@@ -22,7 +22,7 @@ const StyledModalInput = styled.input`
 `;
 
 const StyledModalButton = styled.button`
-  background-color: #4caf50;
+  background-color:#006400;
   color: #fff;
   padding: 10px;
   border: none;
@@ -32,7 +32,7 @@ const StyledModalButton = styled.button`
 `;
 
 const StyledModalCancelButton = styled(StyledModalButton)`
-  background-color: #f44336;
+  background-color:#960018;
 `;
 
 
