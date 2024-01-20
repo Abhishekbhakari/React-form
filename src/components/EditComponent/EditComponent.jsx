@@ -32,7 +32,7 @@ const StyledModalButton = styled.button`
 `;
 
 const StyledModalCancelButton = styled(StyledModalButton)`
-  background-color:#960018;
+  background-color:#af002a;
 `;
 
 
