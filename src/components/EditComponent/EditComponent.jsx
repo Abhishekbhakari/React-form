@@ -1,6 +1,4 @@
-// Modal component for editing table rows
 import React, { useState, useEffect } from 'react';
-// Styled components for EditModalComponent
 import styled from 'styled-components';
 
 const StyledModal = styled.div`
@@ -39,7 +37,7 @@ const StyledModalCancelButton = styled(StyledModalButton)`
 
 
 const EditModalComponent = ({ rowData, onSave, onClose }) => {
-  // State for modal form fields
+  // State 
   const [editedName, setEditedName] = useState('');
   const [editedEmail, setEditedEmail] = useState('');
   const [editedContact, setEditedContact] = useState('');
@@ -47,7 +45,7 @@ const EditModalComponent = ({ rowData, onSave, onClose }) => {
   const [editedGender, setEditedGender] = useState('');
   const [editedDob, setEditedDob] = useState('');
 
-  // Effect to pre-fill form fields with selected row data
+  // Effect to pre-fill form 
   useEffect(() => {
     setEditedName(rowData.name);
     setEditedEmail(rowData.email);
@@ -68,7 +66,7 @@ const EditModalComponent = ({ rowData, onSave, onClose }) => {
       gender: editedGender,
       dob: editedDob,
     };
-    // Invoke parent component's onSave function with updated data
+   
     onSave(updatedData);
     // Close the modal
     onClose();
