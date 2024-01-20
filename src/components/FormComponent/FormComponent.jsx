@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// Styled components for FormComponent
 import styled from 'styled-components';
 
 const StyledForm = styled.form`
@@ -58,9 +57,9 @@ const FormComponent = ({ onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Validation logic (add your validation here)
+    // Validation logic
     if (name && email && contact && weekday && gender && dob) {
-      // Construct form data object
+      
       const formData = {
         name,
         email,
@@ -69,9 +68,9 @@ const FormComponent = ({ onSubmit }) => {
         gender,
         dob,
       };
-      // Invoke parent component's onSubmit function with form data
+     // onSubmit 
       onSubmit(formData);
-      // Reset form fields
+      // Reset
       setName('');
       setEmail('');
       setContact('');
@@ -79,7 +78,7 @@ const FormComponent = ({ onSubmit }) => {
       setGender('');
       setDob('');
     } else {
-      // Handle form validation errors (if any)
+      // Handle form validation errors
       console.error('Form validation error. Please check all fields.');
     }
   };
