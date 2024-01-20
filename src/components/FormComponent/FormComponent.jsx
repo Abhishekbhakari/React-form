@@ -96,7 +96,7 @@ const FormComponent = ({ onSubmit }) => {
       <StyledLabel>Contact: </StyledLabel>
       <StyledInput type="number" value={contact} onChange={(e) => setContact(e.target.value)} required />
 
-      <StyledLabel>Weekday: </StyledLabel>
+      <StyledLabel>Weekday: Mon to Fri </StyledLabel>
       <StyledInputRadio type="checkbox" checked={weekday} onChange={() => setWeekday(!weekday)} />
 
       <StyledLabel>Gender </StyledLabel>
