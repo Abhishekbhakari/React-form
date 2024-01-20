@@ -1,6 +1,4 @@
-// Table component for displaying data in tabular format
 import React from 'react';
-// Styled components for TableComponent
 import styled from 'styled-components';
 
  const StyledTable = styled.table`
@@ -76,7 +74,7 @@ const TableComponent = ({ data, onEdit, onDelete }) => {
             <td>{row.gender}</td>
             <td>{row.dob}</td>
             <td>
-              {/* Edit and Delete buttons with event handlers */}
+              {/* Edit and Delete buttons */}
               <StyledButtonEdit onClick={() => onEdit(index)}>Edit</StyledButtonEdit>
               <StyledButtonDelete onClick={() => onDelete(index)}>Delete</StyledButtonDelete>
             </td>
